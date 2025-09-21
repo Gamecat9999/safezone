@@ -1,0 +1,5 @@
+me\james\safezone\Zone.class
+me\james\safezone\commands\RemoveZoneCommand.class
+me\james\safezone\commands\SetZoneCommand.class
+me\james\safezone\ZoneManager.class
+me\james\safezone\SafeZone.class

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SafeZone Plugin Wiki</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 2em; color: #333; }
+    h1, h2 { color: #2c3e50; }
+    code { background: #eee; padding: 2px 6px; border-radius: 4px; }
+    pre { background: #eee; padding: 1em; border-radius: 6px; overflow-x: auto; }
+    .section { margin-bottom: 2em; }
+  </style>
+</head>
+<body>
+
+  <h1>🔐 SafeZone Plugin</h1>
+  <p><strong>Version:</strong> 1.0<br>
+     <strong>Author:</strong> James<br>
+     <strong>API:</strong> Spigot 1.13+</p>
+
+  <div class="section">
+    <h2>📦 Overview</h2>
+    <p>SafeZone is a lightweight Minecraft plugin that allows server admins to create protected zones where PvP, mob damage, and block breaking are disabled. Perfect for spawn areas, shops, or safe havens.</p>
+  </div>
+
+  <div class="section">
+    <h2>⚙️ Commands</h2>
+    <ul>
+      <li><code>/safezone set &lt;name&gt; &lt;width&gt; &lt;length&gt;</code> — Creates a zone centered on the player.</li>
+      <li><code>/safezone remove &lt;name&gt;</code> — Removes the specified zone.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🧠 How It Works</h2>
+    <ul>
+      <li>Zones are rectangular and centered on the player’s current location.</li>
+      <li>Protection includes:
+        <ul>
+          <li>Disabling PvP</li>
+          <li>Preventing mob damage</li>
+          <li>Blocking block breaking</li>
+        </ul>
+      </li>
+      <li>Zones are stored in memory (config persistence coming soon).</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🧾 plugin.yml</h2>
+    <pre>
+name: SafeZone
+main: me.james.safezone.SafeZone
+version: 1.0
+api-version: 1.13
+commands:
+  safezone:
+    description: Manage safe zones
+    usage: /safezone &lt;set|remove&gt; &lt;name&gt; [width] [length]
+    </pre>
+  </div>
+
+  <div class="section">
+    <h2>📁 Maven Setup</h2>
+    <p>Use <code>spigot-api</code> with scope <code>provided</code> in your <code>pom.xml</code>. Java 8 recommended.</p>
+  </div>
+
+  <div class="section">
+    <h2>🚀 Future Features</h2>
+    <ul>
+      <li>Zone persistence via config or flatfile</li>
+      <li>Visual indicators (particles, holograms)</li>
+      <li>Permission checks</li>
+      <li>Zone listing and info commands</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p><em>Built with mythic precision by James. Protect your realm, one zone at a time.</em></p>
+  </footer>
+
+</body>
+</html>
